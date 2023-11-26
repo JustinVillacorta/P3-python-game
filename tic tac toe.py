@@ -104,7 +104,7 @@ window = Tk()
 
 window.title("Tech Titan Tic Tac Toe")
 window['background']='#FFE5B4'
-window.geometry("550x670")
+window.geometry("550x700+500+50")
 players = ["X","O"]
 player = random.choice(players)
 buttons = [[0,0,0],
@@ -116,7 +116,7 @@ label.pack(side="top")
 
 
 reset_button = Button(text="restart", font=('consolas',15), command=new_game,bg='sky blue')
-reset_button.pack(side="top")
+reset_button.pack(side="top",pady=20)
 
 
 j = 10
